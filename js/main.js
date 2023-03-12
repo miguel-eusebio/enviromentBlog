@@ -36,14 +36,8 @@ $(document).ready(function () {
             });     
     }
 
-    let isFirstEntry = true;
     let arrayColors = ['green', 'red', 'blue']
-
-    if (isFirstEntry) {
-        localStorage.setItem('backgroundColor', 'green');
-        isFirstEntry = false;
-    }
-    
+  
     let localStorageColor = localStorage.getItem('backgroundColor');
     
     const filteredColor = arrayColors.filter((color) => color !== localStorageColor)
