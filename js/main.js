@@ -36,9 +36,16 @@ $(document).ready(function () {
             });     
     }
 
+    let isFirstEntry = true;
     let arrayColors = ['green', 'red', 'blue']
-    let localStorageColor = localStorage.getItem('backgroundColor');
 
+    if (isFirstEntry) {
+        localStorage.setItem('backgroundColor', 'green');
+        isFirstEntry = false;
+    }
+    
+    let localStorageColor = localStorage.getItem('backgroundColor');
+    
     const filteredColor = arrayColors.filter((color) => color !== localStorageColor)
 
     setImages(localStorageColor, filteredColor[0], filteredColor[1])
