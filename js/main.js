@@ -95,7 +95,7 @@ $(document).ready(function () {
     var backgroundColor = 'green';
 
     $('#to-green').click(function () {
-        theme.attr('href', 'css/green.css');
+        theme.attr('href', './css/green.css');
         backgroundColor = 'green';
         localStorage.setItem('backgroundColor', backgroundColor);
 
@@ -105,7 +105,7 @@ $(document).ready(function () {
     });
 
     $('#to-red').click(function () { 
-        theme.attr('href', 'css/red.css');
+        theme.attr('href', './css/red.css');
         backgroundColor = 'red';
         localStorage.setItem('backgroundColor', backgroundColor);
 
@@ -115,7 +115,7 @@ $(document).ready(function () {
     });
 
     $('#to-blue').click(function blue() { 
-        theme.attr('href', 'css/blue.css');
+        theme.attr('href', './css/blue.css');
         backgroundColor = 'blue';
         localStorage.setItem('backgroundColor', backgroundColor);
 
@@ -126,7 +126,7 @@ $(document).ready(function () {
     });
     
     // HACER QUE EL COLOR ELEGIDO SE QUEDE ALMACENADO EN EL LOCAL STORAGE
-    theme.attr('href', `css/${localStorageColor}.css`);
+    theme.attr('href', `./css/${localStorageColor}.css`);
 
     // SCROLL ARRIBA DE LA WEB
     $('.up').click(function (e) {
