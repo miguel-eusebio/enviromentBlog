@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con JavaScript y JQuery</title>
+
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <link rel="shortcut icon" href="./img/planeta.png" type="image/x-icon">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- MIS SCRIPTS -->
+    <script src="./js/main.js"></script>
+
+    <!-- MOMENTS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es-mx.min.js" integrity="sha512-xDkjENZG+aLSnyKKVe8hFVXGnxSUXZmTHifRsaaGhRhFpEhLJTksMuqB/9zQHJ3xYwG0JAhFi0a6eG41n1I6/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+
+        <!-- CABECERA -->
+        <header>
+            <div id="logo">
+                <h1>Blog Ambiental</h1>
+            </div>
+            <div class="clearfix"></div>
+            <div id="menu">
+                <h2>Noticias interesantes acerca del medio ambiente</h2>
+            </div>
+        </header>
+
+        <!-- SLIDER -->
+        <div id="slider">
+            <div class="galeria">
+                <!-- Cargar img-div desde JSON -->
+            </div>
+        </div>
+
+        <!-- CONTENIDO -->
+        <section id="content">
+
+            <div id="posts">
+                <!-- Cargar post desde JSON -->
+            </div>
+            
+        </section>
+
+        <div class="clearfix"></div>
+
+    </section>
+
+    <footer>
+        Elaborado con JavaScript y JQuery. &copy;
+        <a href="#" class="up">Ir arriba</a>
+    </footer>
+
+</body>
+
+</html>

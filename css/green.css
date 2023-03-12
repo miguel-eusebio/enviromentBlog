@@ -1,0 +1,12 @@
+body {
+    background-attachment: fixed;
+    background: url('../img/green.jpg');
+}
+
+#logo {
+    background: #235e3d;
+}
+
+.read-more {
+    background: #235e3d;
+}
